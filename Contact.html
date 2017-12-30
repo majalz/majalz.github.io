@@ -14,8 +14,12 @@ p{
   font: italic bold 30px/30px Georgia, serif;
   text-align: center;
 }
-  
-div {
+  .newspaper {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
     column-gap: 40px;
 }  
 </style>
@@ -26,8 +30,8 @@ div {
    <p>
   <a href="index.html">Home</a>
   <a href="About.html">About</a>
-  <a href="Contact.html">Contact</a>  
-     <div>Name:</div><div>Maja Lakičević Žarić</div>
+     <a href="Contact.html">Contact</a></p>
+     <div class="newspaper">Name: Maja Lakičević Žarić</div>
   </p>
  </body>
 </html>
